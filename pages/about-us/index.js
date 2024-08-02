@@ -1,4 +1,4 @@
-import About from '@/components/about'
+import About from '@/components/About'
 import TopBar from '@/components/TopBar'
 import React from 'react'
 
