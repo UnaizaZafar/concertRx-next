@@ -1,5 +1,5 @@
 import React from "react";
-import bgHero from "@/images/Rectangle 335.png";
+//import bgHero from "@/images/Rectangle 335.svg";
 import logo from "../images/ConcertRx-full-logo.svg";
 import Image from "next/image";
 import mail from "../images/LoctionIcon.svg";
@@ -14,8 +14,9 @@ const Hero = () => {
       {/* <Image src={bgHero} width="full" height="full"></Image> */}
 
       <div
-        className="px-16 py-0 h-screen bg-cover bg-center flex flex-col gap-16 items-center justify-center"
-        style={{ backgroundImage: `url(${bgHero})` }}
+    
+        className="bg-bg-img px-16 py-0 h-screen bg-cover bg-center flex flex-col gap-16 items-center justify-center"
+        // style={{ backgroundImage: `url(${bgHero})` }}
       >
         <Image src={logo}></Image>
         <div className="flex gap-8 ">
