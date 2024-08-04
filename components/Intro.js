@@ -49,7 +49,7 @@ const Intro = () => {
             </div>
           </div>
         </div>
-        <div className="h-screen px-24">
+        <div className="h-full px-24">
           <div className=" gap-10 flex flex-col h-full">
             <div className="flex justify-center">
               <Image src={thumbsup}></Image>
@@ -97,16 +97,16 @@ const Intro = () => {
             </div>
           </div>
         </div>
-        <div className="h-screen px-28 ">
+        <div className="h-full px-28 ">
           <WorkFlow />
         </div>
-        <div className="h-screen px-28 ">
+        <div className="h-full px-28 ">
           <PatientJourney />
         </div>
-        <div className="h-screen px-28 ">
+        <div className="h-full px-28 ">
           <Stocks />
         </div>
-        <div className="h-screen  ">
+        <div className="h-full  ">
           <div className="flex flex-col gap-2">
             <div className="flex justify-center gap-2">
               <Image src={star}></Image>
@@ -142,7 +142,7 @@ const Intro = () => {
             </div>
           </div>
         </div>
-        <div className="h-screen">
+        <div className="h-full">
           <div className="flex flex-col gap-2 px-96">
             <div className="flex justify-center gap-2">
               <Image src={bolt}></Image>
