@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       backgroundImage: {
        'bg-img':"url(/Rectangle 335.svg)"
+      },
+      listStyleType: {
+      'tick':'✓'
       }
     },
   },

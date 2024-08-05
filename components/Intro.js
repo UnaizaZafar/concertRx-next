@@ -20,7 +20,7 @@ const Intro = () => {
   return (
     <>
       <div className="flex flex-col gap-24">
-        <div className="bg-[#48B64908] h-screen">
+        <div className="bg-[#48B64908] h-screen flex flex-col">
           <TopBar />
           <div className=" h-full gap-4 flex flex-col justify-center items-center">
             <div className="flex gap-2">
@@ -40,12 +40,18 @@ const Intro = () => {
               </p>
             </div>
             <div className="flex gap-2">
-              <div className="font-bold text-base flex justify-center items-center bg-[#48b649] rounded-3xl py-4 px-8 text-white">
+              <Link
+                className="font-bold text-base flex justify-center items-center bg-[#48b649] rounded-3xl py-4 px-8 text-white"
+                href=""
+              >
                 Try ConcertRx now
-              </div>
-              <div className="font-bold text-base flex items-center justify-center border border-[#48b649] rounded-3xl py-4 px-8 text-[#48b649]">
+              </Link>
+              <Link
+                className="font-bold text-base flex items-center justify-center border border-[#48b649] rounded-3xl py-4 px-8 text-[#48b649]"
+                href=""
+              >
                 View Pricing
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -158,13 +164,17 @@ const Intro = () => {
               Ozempic waiting list or you can use ConcertRx and save time, money
               and hair!.
             </p>
-            <div className=" bg-[#48B649] w-36 flex self-center py-4 px-8 text-white rounded-3xl text-center">
+            <Link
+              href=""
+              className=" bg-[#48B649] w-36 flex self-center py-4 px-8 text-white rounded-3xl text-center"
+            >
               <p className="font-medium text-sm ">Start for free</p>
-            </div>
-            <p className='font-normal text-xs text-center'>Get 50 credits now.</p>
+            </Link>
+            <p className="font-normal text-xs text-center">
+              Get 50 credits now.
+            </p>
           </div>
         </div>
-      
       </div>
     </>
   );

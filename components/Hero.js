@@ -14,7 +14,6 @@ const Hero = () => {
       {/* <Image src={bgHero} width="full" height="full"></Image> */}
 
       <div
-    
         className="bg-bg-img px-16 py-0 h-screen bg-cover bg-center flex flex-col gap-16 items-center justify-center"
         // style={{ backgroundImage: `url(${bgHero})` }}
       >
@@ -80,22 +79,22 @@ const Hero = () => {
         <ul className="flex gap-3 text-base font-medium text-[#27272A]">
           <li>
             {" "}
-            <Link href="/">Privacy Policy </Link>{" "}
+            <Link href="/privacy-policy">Privacy Policy </Link>{" "}
           </li>
           <li>|</li>
           <li>
             {" "}
-            <Link href="/">Terms and Conditions </Link>{" "}
+            <Link href="/terms-and-conditions">Terms and Conditions </Link>{" "}
           </li>
           <li>|</li>
           <li>
             {" "}
-            <Link href="/">EULA</Link>{" "}
+            <Link href="/agreement">EULA</Link>{" "}
           </li>
           <li>|</li>
           <li>
             {" "}
-            <Link href="/">Security</Link>{" "}
+            <Link href="/security">Security</Link>{" "}
           </li>
           <li>|</li>
           <li>
@@ -105,7 +104,7 @@ const Hero = () => {
         </ul>
         <Image src={GigaRx}></Image>
       </div>
-      <div className="px-20 py-44 flex flex-col gap-12">
+      <div className="px-20 h-full flex flex-col gap-12">
         <div className="flex justify-between ">
           <div className="flex flex-col ">
             <h1 className="font-bold text-[40px]">
