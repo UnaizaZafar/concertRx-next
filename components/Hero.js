@@ -11,11 +11,16 @@ import BarCode from "../images/Frame 427318223.svg";
 const Hero = () => {
   return (
     <>
-      {/* <Image src={bgHero} width="full" height="full"></Image> */}
-
+   <div className='flex flex-col gap-20' style={{zIndex:-1, position:'absolute', width:'100%', height:'100%'}}>
+        <Image
+          src="/Rectangle 335.svg"
+          alt="BgImage"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div
-        className="bg-bg-img px-16 py-0 h-screen bg-cover bg-center flex flex-col gap-16 items-center justify-center"
-        // style={{ backgroundImage: `url(${bgHero})` }}
+        className=" px-16 py-0 h-screen bg-cover bg-center flex flex-col gap-16 items-center justify-center"
       >
         <Image src={logo}></Image>
         <div className="flex gap-8 ">

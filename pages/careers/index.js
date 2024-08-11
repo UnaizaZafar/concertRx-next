@@ -16,7 +16,7 @@ const Index = () => {
               We’re always eager to meet fresh talent, so send us a brief
               message introducing your super power!
             </p>
-            <form action="" className='flex flex-col gap-4'>
+            <form action="" className='flex flex-col gap-4 justify'>
               <div className="flex justify-between ">
                 <input
                   type="text"

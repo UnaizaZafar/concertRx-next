@@ -19,8 +19,16 @@ const Pricing = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="bg-bg-img h-screen gap-12 flex flex-col">
+      <div className=" h-screen gap-12 flex flex-col">
         <TopBar bg="bg-[#27272A]" text="text-[#27272A]" />
+        <div className='flex flex-col gap-20' style={{zIndex:-1, position:'absolute', width:'100%', height:'100%'}}>
+        <Image
+          src="/Rectangle 335.svg"
+          alt="BgImage"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
         <div className=" h-full gap-4 flex flex-col items-center">
           <div className="flex flex-col gap-4  max-w-[624px] text-center">
             <h1 className="font-bold text-[64px] leading-[70px] text-[#27272A]">
@@ -32,7 +40,7 @@ const Pricing = () => {
             </p>
           </div>
         </div>
-        <div className="p-20 flex  justify-between flex-wrap">
+        <div className="p-20 flex  justify-between">
           <Cards
             buttonTag="Get Started"
             title="Standard"
@@ -98,9 +106,9 @@ const Pricing = () => {
               Everything you need to know about the product and billing.
             </p>
           </div>
-          <div className='flex flex-col'>
-            <div className="text-left flex flex-col  gap-8 justify-center items-center">
-              <div className="flex items-center">
+          <div className="flex flex-col">
+            <div className="text-left flex flex-col gap-8 justify-center items-center">
+              <div className="flex items-center border-b">
                 <h1
                   className="text-lg font-medium"
                   style={isOpen ? null : FAQstyles}
@@ -118,8 +126,8 @@ const Pricing = () => {
                   {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
                 </button>
               </div>
-              <hr />
-              <div className="flex items-center">
+
+              <div className="flex items-center border-b">
                 <h1
                   className="text-lg font-medium"
                   style={isOpen ? null : FAQstyles}
@@ -128,16 +136,17 @@ const Pricing = () => {
                   Can I change my plan later? <br />
                   <span className="font-normal text-base">
                     {" "}
-                    Yes, you can try us for free for 30 days. If you want, we’ll
-                    provide you with a free, personalized 30-minute onboarding
-                    call to get you up and running as soon as possible.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio, dolorum. Incidunt soluta hic nam magnam impedit
+                    laboriosam ab cumque quod.
                   </span>{" "}
                 </h1>
                 <button onClick={() => setIsOpen(!isOpen)}>
                   {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
                 </button>
               </div>
-              <div className="flex items-center">
+
+              <div className="flex items-center border-b">
                 <h1
                   className="text-lg font-medium"
                   style={isOpen ? null : FAQstyles}
@@ -146,16 +155,16 @@ const Pricing = () => {
                   What is your cancellation policy? <br />
                   <span className="font-normal text-base">
                     {" "}
-                    Yes, you can try us for free for 30 days. If you want, we’ll
-                    provide you with a free, personalized 30-minute onboarding
-                    call to get you up and running as soon as possible.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis repellat veniam debitis, voluptas reprehenderit
+                    quasi.
                   </span>{" "}
                 </h1>
                 <button onClick={() => setIsOpen(!isOpen)}>
                   {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
                 </button>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center border-b">
                 <h1
                   className="text-lg font-medium"
                   style={isOpen ? null : FAQstyles}
@@ -164,34 +173,35 @@ const Pricing = () => {
                   Can other info be added to an invoice? <br />
                   <span className="font-normal text-base">
                     {" "}
-                    Yes, you can try us for free for 30 days. If you want, we’ll
-                    provide you with a free, personalized 30-minute onboarding
-                    call to get you up and running as soon as possible.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores deserunt similique error nobis at nostrum sit
+                    voluptate commodi veritatis. Aliquid, iusto dolorum.
+                    Perspiciatis, beatae cum.
                   </span>{" "}
                 </h1>
                 <button onClick={() => setIsOpen(!isOpen)}>
                   {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
                 </button>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center border-b">
                 <h1
                   className="text-lg font-medium"
                   style={isOpen ? null : FAQstyles}
                 >
                   {" "}
-                  How does billing work? <br /> 
+                  How does billing work? <br />
                   <span className="font-normal text-base">
                     {" "}
-                    Yes, you can try us for free for 30 days. If you want, we’ll
-                    provide you with a free, personalized 30-minute onboarding
-                    call to get you up and running as soon as possible.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Commodi quaerat dolore architecto enim laboriosam dicta
+                    obcaecati itaque magnam perferendis sapiente?
                   </span>{" "}
                 </h1>
                 <button onClick={() => setIsOpen(!isOpen)}>
                   {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
                 </button>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center border-b">
                 <h1
                   className="text-lg font-medium"
                   style={isOpen ? null : FAQstyles}
@@ -200,9 +210,9 @@ const Pricing = () => {
                   How do i change my account email? <br />
                   <span className="font-normal text-base">
                     {" "}
-                    Yes, you can try us for free for 30 days. If you want, we’ll
-                    provide you with a free, personalized 30-minute onboarding
-                    call to get you up and running as soon as possible.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iusto, atque! Ratione quod voluptatum nam earum, veniam enim
+                    totam!
                   </span>{" "}
                 </h1>
                 <button onClick={() => setIsOpen(!isOpen)}>
@@ -210,8 +220,6 @@ const Pricing = () => {
                 </button>
               </div>
             </div>
-
-          
           </div>
         </div>
       </div>

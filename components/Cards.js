@@ -3,7 +3,7 @@ import Link from "next/link";
 const Cards = ({ title, price, description, buttonTag, children,textColor='text-[#D4d4d8]',bgColor='bg-transparent' }) => {
   return (
     <>
-      <div className="p-11 flex flex-col gap-6 w-max h-[510px] rounded-lg border border-[#E4E4E7] backdrop-blur-sm">
+      <div className="p-11 flex flex-col gap-6 w-max h-[510px] rounded-lg border border-[#E4E4E7] bg-white backdrop-blur-2xl">
         <div className="flex flex-col gap-2">
           <h3 className="font-medium text-2xl text-[#27272A]">{title}</h3>
           <p className="font-medium text-xs text-[#27272A]">{description}</p>
