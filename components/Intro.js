@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./Hero";
+import Footer from "./Footer";
 import Link from "next/link";
 import TopBar from "./TopBar";
 import star from "../images/Star 1.svg";
@@ -149,12 +149,12 @@ const Intro = () => {
           </div>
         </div>
         <div className="h-full">
-          <div className="flex flex-col gap-2 px-96">
+          <div className="flex-grow flex flex-col gap-2 justify-center items-center">
             <div className="flex justify-center gap-2">
               <Image src={bolt}></Image>
               <p className="font-medium text-sm text-center">Lets Connect</p>
             </div>
-            <h1 className="font-bold text-5xl text-center mb-10">
+            <h1 className="font-bold text-5xl text-center flex ">
               Ready to Make Music?
             </h1>
             <p className="text-lg font-normal text-center">

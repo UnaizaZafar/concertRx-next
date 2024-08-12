@@ -8,10 +8,10 @@ import Link from "next/link";
 import GigaRx from "../images/Frame 813056.svg";
 import BarCode from "../images/Frame 427318223.svg";
 
-const Hero = () => {
+const Footer = () => {
   return (
     <>
-   <div className='flex flex-col gap-20' style={{zIndex:-1, position:'absolute', width:'100%', height:'100%'}}>
+   <div className='flex flex-col gap-20 items-center justify-center' style={{zIndex:-1, position:'absolute', width:'100%', height:'100%'}}>
         <Image
           src="/Rectangle 335.svg"
           alt="BgImage"
@@ -20,7 +20,7 @@ const Hero = () => {
         />
       </div>
       <div
-        className=" px-16 py-0 h-screen bg-cover bg-center flex flex-col gap-16 items-center justify-center"
+        className=" px-16 py-0 h-screen  flex flex-col gap-16 items-center justify-center"
       >
         <Image src={logo}></Image>
         <div className="flex gap-8 ">
@@ -137,4 +137,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Footer;

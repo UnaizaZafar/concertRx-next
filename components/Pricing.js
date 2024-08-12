@@ -3,9 +3,8 @@ import TopBar from "./TopBar";
 import Cards from "./Cards";
 import seeLess from "../images/Icon wrap.svg";
 import seeMore from "../images/Icon wrap (1).svg";
-
 import Image from "next/image";
-import Hero from "./Hero";
+import Footer from "./Footer";
 import tick from "../images/done_black_24dp 3.svg";
 // import { useState } from "react/cjs/react.development";
 import { useRef, useEffect, useState } from "react";
@@ -17,18 +16,32 @@ const FAQstyles = {
 };
 const Pricing = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setIsOpen5] = useState(false);
+  const [isOpen6, setIsOpen6] = useState(false);
+
   return (
     <>
       <div className=" h-screen gap-12 flex flex-col">
         <TopBar bg="bg-[#27272A]" text="text-[#27272A]" />
-        <div className='flex flex-col gap-20' style={{zIndex:-1, position:'absolute', width:'100%', height:'100%'}}>
-        <Image
-          src="/Rectangle 335.svg"
-          alt="BgImage"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+        <div
+          className="flex flex-col gap-20"
+          style={{
+            zIndex: -1,
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <Image
+            src="/Rectangle 335.svg"
+            alt="BgImage"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div className=" h-full gap-4 flex flex-col items-center">
           <div className="flex flex-col gap-4  max-w-[624px] text-center">
             <h1 className="font-bold text-[64px] leading-[70px] text-[#27272A]">
@@ -106,121 +119,173 @@ const Pricing = () => {
               Everything you need to know about the product and billing.
             </p>
           </div>
-          <div className="flex flex-col">
-            <div className="text-left flex flex-col gap-8 justify-center items-center">
-              <div className="flex items-center border-b">
-                <h1
-                  className="text-lg font-medium"
-                  style={isOpen ? null : FAQstyles}
-                >
-                  {" "}
-                  Is there a Free Trail available? <br />
-                  <span className="font-normal text-base">
+          <table className="flex flex-col justify-center self-center w-3/5 px-20">
+            <tbody className="text-left flex flex-col justify-center  items-center gap-8 ">
+              <tr className="flex items-center justify-between border-b">
+                <td className='flex justify-start'>
+                  <h1
+                    className="text-lg font-medium"
+                    style={isOpen ? null : FAQstyles}
+                  >
                     {" "}
-                    Yes, you can try us for free for 30 days. If you want, we’ll
-                    provide you with a free, personalized 30-minute onboarding
-                    call to get you up and running as soon as possible.
-                  </span>{" "}
-                </h1>
-                <button onClick={() => setIsOpen(!isOpen)}>
-                  {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
-                </button>
-              </div>
+                    Is there a Free Trail available? <br />
+                    <span className="font-normal text-base">
+                      {" "}
+                      Yes, you can try us for free for 30 days. If you want,
+                      we’ll provide you with a free, personalized 30-minute
+                      onboarding call to get you up and running as soon as
+                      possible.
+                    </span>{" "}
+                  </h1>
+                </td>
+                <td className='flex justify-end'>
+                  <button onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
+                  </button>
+                </td>
+              </tr>
 
-              <div className="flex items-center border-b">
-                <h1
-                  className="text-lg font-medium"
-                  style={isOpen ? null : FAQstyles}
-                >
-                  {" "}
-                  Can I change my plan later? <br />
-                  <span className="font-normal text-base">
+              <tr className="flex items-center justify-between border-b">
+                <td className='flex justify-start'>
+                  <h1
+                    className="text-lg font-medium"
+                    style={isOpen2 ? null : FAQstyles}
+                  >
                     {" "}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio, dolorum. Incidunt soluta hic nam magnam impedit
-                    laboriosam ab cumque quod.
-                  </span>{" "}
-                </h1>
-                <button onClick={() => setIsOpen(!isOpen)}>
-                  {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
-                </button>
-              </div>
+                    Can I change my plan later? <br />
+                    <span className="font-normal text-base">
+                      {" "}
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio, dolorum. Incidunt soluta hic nam magnam impedit
+                      laboriosam ab cumque quod.
+                    </span>{" "}
+                  </h1>
+                </td>
+                <td className='flex justify-end'>
+                  <button onClick={() => setIsOpen2(!isOpen2)}>
+                    {isOpen2 ? (
+                      <Image src={seeLess} />
+                    ) : (
+                      <Image src={seeMore} />
+                    )}
+                  </button>
+                </td>
+              </tr>
 
-              <div className="flex items-center border-b">
-                <h1
-                  className="text-lg font-medium"
-                  style={isOpen ? null : FAQstyles}
-                >
-                  {" "}
-                  What is your cancellation policy? <br />
-                  <span className="font-normal text-base">
+              <tr className="flex items-center justify-between border-b ">
+                <td className='flex justify-start'>
+                  <h1
+                    className="text-lg font-medium"
+                    style={isOpen3 ? null : FAQstyles}
+                  >
                     {" "}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facilis repellat veniam debitis, voluptas reprehenderit
-                    quasi.
-                  </span>{" "}
-                </h1>
-                <button onClick={() => setIsOpen(!isOpen)}>
-                  {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
-                </button>
-              </div>
-              <div className="flex items-center border-b">
-                <h1
-                  className="text-lg font-medium"
-                  style={isOpen ? null : FAQstyles}
-                >
+                    What is your cancellation policy? <br />
+                    <span className="font-normal text-base">
+                      {" "}
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facilis repellat veniam debitis, voluptas reprehenderit
+                      quasi.
+                    </span>{" "}
+                  </h1>
+                </td>
+                <td className="flex justify-end">
                   {" "}
-                  Can other info be added to an invoice? <br />
-                  <span className="font-normal text-base">
-                    {" "}
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolores deserunt similique error nobis at nostrum sit
-                    voluptate commodi veritatis. Aliquid, iusto dolorum.
-                    Perspiciatis, beatae cum.
-                  </span>{" "}
-                </h1>
-                <button onClick={() => setIsOpen(!isOpen)}>
-                  {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
-                </button>
-              </div>
-              <div className="flex items-center border-b">
-                <h1
-                  className="text-lg font-medium"
-                  style={isOpen ? null : FAQstyles}
-                >
+                  <button onClick={() => setIsOpen3(!isOpen3)}>
+                    {isOpen3 ? (
+                      <Image src={seeLess} />
+                    ) : (
+                      <Image src={seeMore} />
+                    )}
+                  </button>
+                </td>
+              </tr>
+              <tr className="flex items-center justify-between border-b">
+                <td className='flex justify-start'>
                   {" "}
-                  How does billing work? <br />
-                  <span className="font-normal text-base">
+                  <h1
+                    className="text-lg font-medium"
+                    style={isOpen4 ? null : FAQstyles}
+                  >
                     {" "}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Commodi quaerat dolore architecto enim laboriosam dicta
-                    obcaecati itaque magnam perferendis sapiente?
-                  </span>{" "}
-                </h1>
-                <button onClick={() => setIsOpen(!isOpen)}>
-                  {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
-                </button>
-              </div>
-              <div className="flex items-center border-b">
-                <h1
-                  className="text-lg font-medium"
-                  style={isOpen ? null : FAQstyles}
-                >
+                    Can other info be added to an invoice? <br />
+                    <span className="font-normal text-base">
+                      {" "}
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolores deserunt similique error nobis at nostrum sit
+                      voluptate commodi veritatis. Aliquid, iusto dolorum.
+                      Perspiciatis, beatae cum.
+                    </span>{" "}
+                  </h1>{" "}
+                </td>
+                <td className="flex justify-end">
                   {" "}
-                  How do i change my account email? <br />
-                  <span className="font-normal text-base">
+                  <button onClick={() => setIsOpen4(!isOpen4)}>
+                    {isOpen4 ? (
+                      <Image src={seeLess} />
+                    ) : (
+                      <Image src={seeMore} />
+                    )}
+                  </button>{" "}
+                </td>
+              </tr>
+              <tr className="flex items-center justify-between border-b">
+                <td className='flex justify-start'>
+                  {" "}
+                  <h1
+                    className="text-lg font-medium"
+                    style={isOpen5 ? null : FAQstyles}
+                  >
                     {" "}
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Iusto, atque! Ratione quod voluptatum nam earum, veniam enim
-                    totam!
-                  </span>{" "}
-                </h1>
-                <button onClick={() => setIsOpen(!isOpen)}>
-                  {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
-                </button>
-              </div>
-            </div>
-          </div>
+                    How does billing work? <br />
+                    <span className="font-normal text-base">
+                      {" "}
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Commodi quaerat dolore architecto enim laboriosam dicta
+                      obcaecati itaque magnam perferendis sapiente?
+                    </span>{" "}
+                  </h1>{" "}
+                </td>
+                <td className="flex justify-end">
+                  {" "}
+                  <button onClick={() => setIsOpen5(!isOpen5)}>
+                    {isOpen5 ? (
+                      <Image src={seeLess} />
+                    ) : (
+                      <Image src={seeMore} />
+                    )}
+                  </button>{" "}
+                </td>
+              </tr>
+              <tr className="flex items-center justify-between border-b">
+                <td className='flex justify-start'>
+                  {" "}
+                  <h1
+                    className="text-lg font-medium"
+                    style={isOpen6 ? null : FAQstyles}
+                  >
+                    {" "}
+                    How do i change my account email? <br />
+                    <span className="font-normal text-base">
+                      {" "}
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Iusto, atque! Ratione quod voluptatum nam earum, veniam
+                      enim totam!
+                    </span>{" "}
+                  </h1>{" "}
+                </td>
+                <td className="flex justify-end">
+                  {" "}
+                  <button onClick={() => setIsOpen6(!isOpen6)}>
+                    {isOpen6 ? (
+                      <Image src={seeLess} />
+                    ) : (
+                      <Image src={seeMore} />
+                    )}
+                  </button>{" "}
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </>
