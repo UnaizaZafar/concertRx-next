@@ -1,4 +1,4 @@
-import Pricing from '@/components/pricing'
+import Pricing from '@/components/Pricing'
 import TopBar from '@/components/TopBar'
 import React from 'react'
 
