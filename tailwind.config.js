@@ -7,12 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-       'bg-img':"url(/Rectangle 335.svg)"
+        
+      screens: {
+        'mobile': '375px',
+        // => @media (min-width: 375px) { ... }
+  
+        'tablet': '744px',
+        // => @media (min-width: 744px) { ... }
+  
+        'desktop': '1440px',
+        // => @media (min-width: 1440px) { ... }
       },
-      listStyleType: {
-      'tick':'✓'
-      }
     },
   },
   plugins: [],

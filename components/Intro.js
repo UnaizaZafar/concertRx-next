@@ -24,10 +24,10 @@ const Intro = () => {
           <TopBar />
           <div className=" h-full gap-4 flex flex-col justify-center items-center">
             <div className="flex gap-2">
-              <Image src={star}></Image>
+              <Image alt='' src={star}></Image>
               <p>Trusted by over 1,000 customers</p>
             </div>
-            <div className="flex flex-col gap-4  max-w-[624px] text-center">
+            <div className="flex flex-col gap-4 w-full max-w-[624px] text-center">
               <h1 className="font-bold text-[64px] leading-[70px] text-[#27272A]">
                 Powerful Patient{" "}
                 <span className="text-[#48B649]"> Experience.</span>
@@ -58,7 +58,7 @@ const Intro = () => {
         <div className="h-full px-24">
           <div className=" gap-10 flex flex-col h-full">
             <div className="flex justify-center">
-              <Image src={thumbsup}></Image>
+              <Image alt='' src={thumbsup}></Image>
               <p>It’s Simple</p>
             </div>
             <div className="flex flex-col gap-3">
@@ -71,7 +71,7 @@ const Intro = () => {
             </div>
             <div className="flex items-center  gap-5">
               <div className="flex flex-col  items-center">
-                <Image src={arrowUpwards}></Image>
+                <Image alt='' src={arrowUpwards}></Image>
                 <h1 className="font-medium text-sm text-center">
                   Smart Workflow
                 </h1>
@@ -80,7 +80,7 @@ const Intro = () => {
                   work.
                 </p>
               </div>
-              <Image src={VideoScreen}></Image>
+              <Image alt='' src={VideoScreen}></Image>
               <div className="flex flex-col items-center">
                 <h1 className="font-medium text-sm text-center">
                   Smart waiting list
@@ -88,11 +88,11 @@ const Intro = () => {
                 <p className="font-normal text-xs text-center">
                   Sending text notifications to customers saves a lot of time.{" "}
                 </p>
-                <Image src={arrowDownwards}></Image>
+                <Image alt='' src={arrowDownwards}></Image>
               </div>
             </div>
             <div className="flex flex-col self-center items-center">
-              <Image src={arrow}></Image>
+              <Image alt='' src={arrow}></Image>
               <h1 className="font-medium text-sm text-center">
                 Smart patient journeys
               </h1>
@@ -115,7 +115,7 @@ const Intro = () => {
         <div className="h-full  ">
           <div className="flex flex-col gap-2">
             <div className="flex justify-center gap-2">
-              <Image src={star}></Image>
+              <Image alt='' src={star}></Image>
               <p className="font-medium text-sm text-center">
                 Trusted by over 1,000 customers
               </p>
@@ -138,20 +138,20 @@ const Intro = () => {
               <div className="flex self-center">
                 <Link href="">
                   {" "}
-                  <Image src={arrowBack}></Image>
+                  <Image alt='' src={arrowBack}></Image>
                 </Link>
                 <Link href="">
                   {" "}
-                  <Image src={arrowForward}></Image>
+                  <Image alt='' src={arrowForward}></Image>
                 </Link>
               </div>
             </div>
           </div>
         </div>
         <div className="h-full">
-          <div className="flex-grow flex flex-col gap-2 justify-center items-center">
+          <div className="flex-grow flex flex-col gap-2  w-full max-w-[630px] mx-auto text-center items-center">
             <div className="flex justify-center gap-2">
-              <Image src={bolt}></Image>
+              <Image alt='' src={bolt}></Image>
               <p className="font-medium text-sm text-center">Lets Connect</p>
             </div>
             <h1 className="font-bold text-5xl text-center flex ">

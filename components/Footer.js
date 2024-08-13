@@ -11,19 +11,9 @@ import BarCode from "../images/Frame 427318223.svg";
 const Footer = () => {
   return (
     <>
-   <div className='flex flex-col gap-20 items-center justify-center' style={{zIndex:-1, position:'absolute', width:'100%', height:'100%'}}>
-        <Image
-          src="/Rectangle 335.svg"
-          alt="BgImage"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-      <div
-        className=" px-16 py-0 h-screen  flex flex-col gap-16 items-center justify-center"
-      >
-        <Image src={logo}></Image>
-        <div className="flex gap-8 ">
+      <div className=" px-16 py-16 h-full  flex flex-col gap-16 items-center justify-center backgroundImage">
+        <Image alt='' src={logo}></Image>
+        <div className="flex gap-8 flex-wrap ">
           <div className="flex flex-col gap-8">
             <h1 className="font-bold text-xl">Products</h1>
             <ul className="font-medium text-sm text-[#3F3F46] leading-loose">
@@ -70,23 +60,24 @@ const Footer = () => {
             <h1 className="font-bold text-xl">Contact us</h1>
             <ul className="font-medium text-sm text-[#3F3F46]  leading-loose">
               <li className="flex">
-                <Image src={location} className="pr-3"></Image>
+                <Image alt='' src={location} className="pr-3"></Image>
                 Level 29/66-84 Goulburn St Sydney NSW 2000
               </li>
               <li className="flex underline">
-                <Image src={mail} className="pr-3"></Image>
+                <Image alt='' src={mail} className="pr-3"></Image>
                 finance@gigarx.capital
               </li>
             </ul>
           </div>
         </div>
 
-        <ul className="flex gap-3 text-base font-medium text-[#27272A]">
+        <ul className="flex gap-3 text-base font-medium text-[#27272A]  ">
           <li>
             {" "}
             <Link href="/privacy-policy">Privacy Policy </Link>{" "}
           </li>
           <li>|</li>
+
           <li>
             {" "}
             <Link href="/terms-and-conditions">Terms and Conditions </Link>{" "}
@@ -107,9 +98,9 @@ const Footer = () => {
             <Link href="/">Site Map</Link>{" "}
           </li>
         </ul>
-        <Image src={GigaRx}></Image>
+        <Image alt='' src={GigaRx}></Image>
       </div>
-      <div className="px-20 h-full flex flex-col gap-12">
+      <div className="px-20 py-20 h-full flex flex-col gap-12 w-full max-w-[1062px]  mx-auto">
         <div className="flex justify-between ">
           <div className="flex flex-col ">
             <h1 className="font-bold text-[40px]">
@@ -121,7 +112,7 @@ const Footer = () => {
               code. You can send STOP to unsubscribe anytime.{" "}
             </p>
           </div>
-          <Image src={BarCode} className="justify-end"></Image>
+          <Image alt='' src={BarCode} className="justify-end"></Image>
         </div>
         <p className="text-center">
           Copyright © 2022 GigaRx Capital Pty Ltd and/or its subsidiaries or

@@ -7,3 +7,15 @@ body {
  margin: 0;
  font-family: 'Satoshi';
 }
+.backgroundImage {
+    background-image:url('../images/Rectangle\ 335\ \(1\).png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .bgImage {
+    background-image:url('../images/Rectangle\ 308.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+   }

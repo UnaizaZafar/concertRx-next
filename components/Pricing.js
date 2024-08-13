@@ -24,24 +24,8 @@ const Pricing = () => {
 
   return (
     <>
-      <div className=" h-screen gap-12 flex flex-col">
+      <div className=" h-full gap-12 flex flex-col bgImage">
         <TopBar bg="bg-[#27272A]" text="text-[#27272A]" />
-        <div
-          className="flex flex-col gap-20"
-          style={{
-            zIndex: -1,
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-          }}
-        >
-          <Image
-            src="/Rectangle 335.svg"
-            alt="BgImage"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
         <div className=" h-full gap-4 flex flex-col items-center">
           <div className="flex flex-col gap-4  max-w-[624px] text-center">
             <h1 className="font-bold text-[64px] leading-[70px] text-[#27272A]">
@@ -53,7 +37,7 @@ const Pricing = () => {
             </p>
           </div>
         </div>
-        <div className="p-20 flex  justify-between">
+        <div className="p-20 flex justify-between">
           <Cards
             buttonTag="Get Started"
             title="Standard"
@@ -62,14 +46,14 @@ const Pricing = () => {
             bgColor="bg-[#48b649]"
             textColor="text-white"
           >
-            {/* <ul className="flex flex-col gap-6 font-normal text-sm">
-              <li>{tick} Unlimited boards</li>
-              <li>{tick} Free SENDER ID </li>
-              <li>{tick} IP address login</li>
-              <li>{tick} Buy SMS credits for $0.1 / credit</li>
-              <li>{tick} GST included in pricing</li>
-              <li>{tick} Credits do not expire</li>
-            </ul> */}
+            <ul className="flex flex-col gap-5 font-normal text-sm">
+              <li>✓ Unlimited boards</li>
+              <li>✓ Free SENDER ID </li>
+              <li>✓ IP address login</li>
+              <li>✓ Buy SMS credits for $0.1 / credit</li>
+              <li>✓ GST included in pricing</li>
+              <li>✓ Credits do not expire</li>
+            </ul>
           </Cards>
           <Cards
             buttonTag="Coming Soon"
@@ -77,11 +61,11 @@ const Pricing = () => {
             description="Power up your business"
             price="$39.95"
           >
-            {/* <ul className="flex flex-col gap-6 font-normal text-sm">
-              <li>{tick} Everything in Standard</li>
-              <li>{tick} Two way messaging </li>
-              <li>{tick} One chatbot</li>
-            </ul> */}
+            <ul className="flex flex-col gap-6 font-normal text-sm">
+              <li>✓ Everything in Standard</li>
+              <li>✓ Two way messaging </li>
+              <li>✓ One chatbot</li>
+            </ul>
           </Cards>
           <Cards
             buttonTag="Coming Soon"
@@ -89,14 +73,14 @@ const Pricing = () => {
             description="Customized just for you"
             price="$89.95"
           >
-            {/* <ul className="flex flex-col gap-6 font-normal text-sm">
-              <li>{tick} Everything in Pro</li>
-              <li>{tick} Print address labels locally </li>
-              <li>{tick} Integration with Australia Post</li>
-            </ul> */}
+            <ul className="flex flex-col gap-6 font-normal text-sm ">
+              <li>✓ Everything in Pro</li>
+              <li>✓ Print address labels locally </li>
+              <li>✓ Integration with Australia Post</li>
+            </ul>
           </Cards>
         </div>
-        <div className="px-20">
+        <div className="px-20 h-full">
           <div className="h-full p-6 rounded-lg bg-[#fafafa]">
             <h1 className="font-bold text-lg text-[#27272a]">Note:</h1>
             <ul className="font-normal text-sm text-[#52525b] list-decimal">
@@ -110,8 +94,8 @@ const Pricing = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col gap-16">
-          <div className="flex flex-col gap-5">
+        <div className="flex flex-col h-full gap-16 py-28">
+          <div className="flex flex-col  gap-5">
             <h1 className="font-bold text-5xl text-center text-[#27272a]">
               Frequently Asked Questions
             </h1>
@@ -119,10 +103,10 @@ const Pricing = () => {
               Everything you need to know about the product and billing.
             </p>
           </div>
-          <table className="flex flex-col justify-center self-center w-3/5 px-20">
-            <tbody className="text-left flex flex-col justify-center  items-center gap-8 ">
+          <table className="flex flex-col mx-auto w-full max-w-[768px]">
+            <tbody className="text-left flex flex-col  gap-8 ">
               <tr className="flex items-center justify-between border-b">
-                <td className='flex justify-start'>
+                <td className="flex justify-start w-full max-w-[720px]">
                   <h1
                     className="text-lg font-medium"
                     style={isOpen ? null : FAQstyles}
@@ -138,15 +122,15 @@ const Pricing = () => {
                     </span>{" "}
                   </h1>
                 </td>
-                <td className='flex justify-end'>
+                <td className="flex justify-end">
                   <button onClick={() => setIsOpen(!isOpen)}>
-                    {isOpen ? <Image src={seeLess} /> : <Image src={seeMore} />}
+                    {isOpen ? <Image alt='' src={seeLess} /> : <Image alt='' src={seeMore}/>}
                   </button>
                 </td>
               </tr>
 
               <tr className="flex items-center justify-between border-b">
-                <td className='flex justify-start'>
+                <td className="flex justify-start  w-full max-w-[720px]">
                   <h1
                     className="text-lg font-medium"
                     style={isOpen2 ? null : FAQstyles}
@@ -161,19 +145,19 @@ const Pricing = () => {
                     </span>{" "}
                   </h1>
                 </td>
-                <td className='flex justify-end'>
+                <td className="flex justify-end">
                   <button onClick={() => setIsOpen2(!isOpen2)}>
                     {isOpen2 ? (
-                      <Image src={seeLess} />
+                      <Image alt='' src={seeLess} />
                     ) : (
-                      <Image src={seeMore} />
+                      <Image alt='' src={seeMore} />
                     )}
                   </button>
                 </td>
               </tr>
 
               <tr className="flex items-center justify-between border-b ">
-                <td className='flex justify-start'>
+                <td className="flex justify-start  w-full max-w-[720px]">
                   <h1
                     className="text-lg font-medium"
                     style={isOpen3 ? null : FAQstyles}
@@ -192,15 +176,15 @@ const Pricing = () => {
                   {" "}
                   <button onClick={() => setIsOpen3(!isOpen3)}>
                     {isOpen3 ? (
-                      <Image src={seeLess} />
+                      <Image alt='' src={seeLess} />
                     ) : (
-                      <Image src={seeMore} />
+                      <Image alt='' src={seeMore} />
                     )}
                   </button>
                 </td>
               </tr>
               <tr className="flex items-center justify-between border-b">
-                <td className='flex justify-start'>
+                <td className="flex justify-start  w-full max-w-[720px]">
                   {" "}
                   <h1
                     className="text-lg font-medium"
@@ -221,15 +205,15 @@ const Pricing = () => {
                   {" "}
                   <button onClick={() => setIsOpen4(!isOpen4)}>
                     {isOpen4 ? (
-                      <Image src={seeLess} />
+                      <Image alt='' src={seeLess} />
                     ) : (
-                      <Image src={seeMore} />
+                      <Image alt='' src={seeMore} />
                     )}
                   </button>{" "}
                 </td>
               </tr>
               <tr className="flex items-center justify-between border-b">
-                <td className='flex justify-start'>
+                <td className="flex justify-start  w-full max-w-[720px]">
                   {" "}
                   <h1
                     className="text-lg font-medium"
@@ -249,15 +233,15 @@ const Pricing = () => {
                   {" "}
                   <button onClick={() => setIsOpen5(!isOpen5)}>
                     {isOpen5 ? (
-                      <Image src={seeLess} />
+                      <Image alt='' src={seeLess} />
                     ) : (
-                      <Image src={seeMore} />
+                      <Image alt='' src={seeMore} />
                     )}
                   </button>{" "}
                 </td>
               </tr>
               <tr className="flex items-center justify-between border-b">
-                <td className='flex justify-start'>
+                <td className="flex justify-start  w-full max-w-[720px]">
                   {" "}
                   <h1
                     className="text-lg font-medium"
@@ -277,9 +261,9 @@ const Pricing = () => {
                   {" "}
                   <button onClick={() => setIsOpen6(!isOpen6)}>
                     {isOpen6 ? (
-                      <Image src={seeLess} />
+                      <Image alt='' src={seeLess} />
                     ) : (
-                      <Image src={seeMore} />
+                      <Image alt='' src={seeMore} />
                     )}
                   </button>{" "}
                 </td>

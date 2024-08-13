@@ -7,10 +7,10 @@ const WorkFlow = () => {
     <>
      
           <div className="h-full flex  justify-center items-center">
-            <Image src={screen} className=''></Image>
+            <Image alt='' src={screen} className=''></Image>
             <div className="flex flex-col gap-2 bg-[#FAFAFA] py-48 pl-32 pr-24 ">
               <div className="flex gap-2 items-center">
-                <Image src={accountTree}></Image>
+                <Image alt='' src={accountTree}></Image>
                 <p>Easy Workflow</p>
               </div>
               <div className="flex flex-col gap-4">

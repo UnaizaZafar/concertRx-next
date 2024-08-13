@@ -6,10 +6,10 @@ const PatientJourney = () => {
   return (
     <>
       <div className="h-full flex flex-row-reverse justify-center items-center">
-        <Image src={screen} className=""></Image>
+        <Image alt='' src={screen} className=""></Image>
         <div className="flex flex-col gap-2 bg-[#FAFAFA] py-48 pl-32 pr-24 ">
           <div className="flex gap-2 items-center">
-            <Image src={patient}></Image>
+            <Image alt='' src={patient}></Image>
             <p>Manage Pharmacies</p>
           </div>
           <div className="flex flex-col gap-4">
