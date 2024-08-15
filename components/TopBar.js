@@ -10,7 +10,7 @@ const TopBar = ({ bg = "bg-[#48B649]", text = "text-[#48B649]" }) => {
   return (
     <>
       <div className="flex  gap-6 justify-between px-20 py-7">
-        <Image alt='' src={logo} className=" "></Image>
+        <Image alt=''  src={logo} className=" "></Image>
         <ul className="flex gap-6 items-center">
           <li>
             <Link
