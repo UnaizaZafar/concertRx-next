@@ -9,6 +9,7 @@ const ObjectStates = () => {
   });
   const handleClear = (event) => {
     console.log("form cleared");
+    console.log('formData =',formData) 
     setForm('');
   };
   const handleSubmit = (event) => {
@@ -16,12 +17,13 @@ const ObjectStates = () => {
     event.preventDefault();
   };
     const handleValues=(fieldName,newValue)=>{
-      setForm( prevData=>({
+      setForm ({
           ...formData,
-          [fieldName]:newValue
-        }))
-    }
-
+          [fieldName]:newValue,
+        })
+     
+      }
+     
   
     return (
       <>
@@ -57,6 +59,8 @@ const ObjectStates = () => {
                   placeholder="Enter Last Name"
                   type="text"
                 />
+                            
+
               </div>
               <div className="flex justify-between items-center gap-2">
                 <label htmlFor="email" className="italic text-sm font-light">
